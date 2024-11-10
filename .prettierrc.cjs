@@ -2,7 +2,7 @@
  * 参考 https://prettier.io/docs/en/options.html
  */
 module.exports = {
-  tabWidth: 2, // 空格数
+  tabWidth: 4, // 空格数
   useTabs: false, // 是否开启tab
   printWidth: 150, // 换行的宽度
   semi: false, // 是否在语句末尾打印分号

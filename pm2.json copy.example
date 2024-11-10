@@ -1,0 +1,15 @@
+{
+    "apps": [
+        {
+            "name": "wechat-bot",
+            "cwd": "/data/apps/wechat-bot",
+            "script": "./cli.js",
+            "args": [
+                "-s",
+                "tongyi"
+            ],
+            "interpreter": "node",
+            "watch": false
+        }
+    ]
+}

@@ -7,3 +7,6 @@ yarn.lock
 Chromium.app
 
 .DS_Store
+images
+pm2.json
+.idea
