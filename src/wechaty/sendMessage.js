@@ -25,7 +25,8 @@ const imagePath = './images/'
  * @returns {Promise<void>}
  */
 export async function defaultMessage(msg, bot, ServiceType = 'GPT') {
-    const getReply = getServe(ServiceType)
+    const getReply = await getServe(ServiceType)
+
     const contact = msg.talker() // 发消息人
     const receiver = msg.to() // 消息接收人
     const content = msg.text() // 消息内容

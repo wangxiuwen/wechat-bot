@@ -9,9 +9,8 @@ export async function getServe(serviceType) {
         const module = await import(modulePath)
         return module.getReply
     } catch (error) {
-        console.error(`❌ 无法加载模块: ${serviceType}. 请检查模块名称是否正确。`, error)
-        // Fallback to a default, e.g., ChatGPT
-        const defaultModule = await import('../openai/index.js')
-        return defaultModule.getReply
+        console.error(`❌ 无法加载模块: ${serviceType}, 请检查模块名称是否正确。`, error)
+        const module = await import('../openai/index.js')
+        return module.getReply
     }
 }
